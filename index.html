@@ -1,14 +1,130 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>My First Website</title>
-    <style>
-        body { font-family: sans-serif; text-align: center; margin-top: 50px; }
-    </style>
-</head>
-<body>
-    <h1>Hello World!</h1>
-    <p>My website is officially live on GitHub Pages.</p>
-</body>
-</html>
+!DOCTYPE html
+html lang=en
+head
+    meta charset=UTF-8
+    meta name=viewport content=width=device-width, initial-scale=1.0
+    titleMy Portfolio  Computer Engineeringtitle
+    !-- Links to your separate CSS file --
+    link rel=stylesheet href=style.css
+head
+body
+
+    !-- Navigation --
+    nav
+        div class=logostrongPortfolio.strongdiv
+        div class=nav-links
+            a href=#projectsProjectsa
+            a href=#skillsSkillsa
+            a href=#aboutAbouta
+        div
+    nav
+
+    !-- Hero Section --
+    header class=hero
+        h1Computer Engineering Student brspan& Hardware Enthusiastspanh1
+        pBridging hardware and software to build practical, automated solutions—from ESP32 microcontrollers to automotive diagnostics.p
+        div
+            a href=#projects class=btnView My Projectsa
+        div
+    header
+
+    !-- Projects Section --
+    section id=projects
+        h2 class=section-titleFeatured Projectsh2
+        div class=projects-grid
+            !-- Project 1 --
+            div class=project-card
+                h3 class=project-titleSmart Hydroponics Systemh3
+                pDesigned a dual-zone automated regulation system for cucumbers and common beans. Integrated sensors for pH, EC, temperature, and humidity, housed in custom 3D-printed enclosures.p
+                div class=tech-stack
+                    span class=tech-tagESP32span
+                    span class=tech-tagI2C & GPIOspan
+                    span class=tech-tag3D Designspan
+                div
+            div
+            
+            !-- Project 2 --
+            div class=project-card
+                h3 class=project-titleAutomotive CarPC Diagnosticsh3
+                pAdapted Dell OptiPlex hardware for Android Auto dashboard integration. Evaluated and integrated OBD2 scanning tools for real-time vehicle diagnostics.p
+                div class=tech-stack
+                    span class=tech-tagHardware Moddingspan
+                    span class=tech-tagOBD2span
+                    span class=tech-tagAndroid Autospan
+                div
+            div
+
+            !-- Project 3 --
+            div class=project-card
+                h3 class=project-titleCyberdeck & SBC Buildsh3
+                pExplored low-power computing and custom active cooling solutions using single-board computers like Raspberry Pi and Orange Pi for portable tech builds.p
+                div class=tech-stack
+                    span class=tech-tagSBCsspan
+                    span class=tech-tagThermal Managementspan
+                    span class=tech-tagLinuxspan
+                div
+            div
+
+            !-- Project 4 --
+            div class=project-card
+                h3 class=project-titleRLD Autoworx Digital Brandingh3
+                pDeveloped digital branding, created logos, and generated promotional video scripts and subtitle files for an auto body repair and restoration service.p
+                div class=tech-stack
+                    span class=tech-tagCanvaspan
+                    span class=tech-tagVideo Editingspan
+                    span class=tech-tagCopywritingspan
+                div
+            div
+        div
+    section
+
+    !-- Skills Section --
+    section id=skills
+        h2 class=section-titleTechnical Skillsh2
+        div class=skills-container
+            div class=skill-category
+                h3Embedded Systems & IoTh3
+                ul
+                    liESP32 & Microcontrollersli
+                    liArduino IDEli
+                    liSensor Integration (I2C, GPIO)li
+                    liAutomated Dosing Logicli
+                ul
+            div
+            div class=skill-category
+                h3Hardware & Prototypingh3
+                ul
+                    li3D Enclosure Designli
+                    liSingle-Board Computersli
+                    liPC & Laptop Hardware Modificationli
+                    liCircuit Prototypingli
+                ul
+            div
+            div class=skill-category
+                h3Design & Toolsh3
+                ul
+                    liAutomotive Diagnostics (OBD2)li
+                    liCanva & Digital Publishingli
+                    liVideo Editing & Subtitlingli
+                    liGit & Version Controlli
+                ul
+            div
+        div
+    section
+
+    !-- Footer  About & Contact --
+    footer id=about
+        h2Let's Connecth2
+        p class=about-text
+            I am a Computer Engineering student based in Lemery, driven by the challenge of building practical, automated systems. Whether it's wiring up a microcontroller or restoring a vehicle, I love making things work perfectly.
+        p
+        div class=social-links
+            a href=mailtoyour.email@example.comEmail Mea
+            a href=#LinkedIna
+            a href=#GitHuba
+        div
+        p class=copyright&copy; 2026 Your Name. All rights reserved.p
+    footer
+
+body
+html
