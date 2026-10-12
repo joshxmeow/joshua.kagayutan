@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Cyberdeck and SBC project illustration">
+  <rect width="800" height="500" fill="#020617" rx="24"/>
+  <rect x="180" y="120" width="440" height="260" rx="24" fill="#1e293b"/>
+  <rect x="220" y="160" width="360" height="180" rx="18" fill="#0ea5e9" opacity="0.7"/>
+  <circle cx="300" cy="250" r="48" fill="#f8fafc" opacity="0.9"/>
+  <circle cx="500" cy="250" r="48" fill="#34d399" opacity="0.9"/>
+  <path d="M410 200 L420 300 L530 240 Z" fill="#fbbf24" opacity="0.85"/>
+  <text x="400" y="92" text-anchor="middle" fill="#f8fafc" font-size="34" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Cyberdeck</text>
+</svg>

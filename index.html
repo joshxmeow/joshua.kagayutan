@@ -13,9 +13,10 @@
     <nav>
         <div class="logo"><strong>Joshua Kagayutan</strong></div>
         <div class="nav-links">
+            <a href="index.html">Home</a>
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
-            <a href="#about">About</a>
+            <a href="about.html">About</a>
         </div>
     </nav>
 
@@ -34,6 +35,7 @@
         <div class="projects-grid">
             <!-- Project 1 -->
             <div class="project-card">
+                <img src="images/project-hydroponics.svg" alt="Smart Hydroponics System" class="project-image">
                 <h3 class="project-title">Smart Hydroponics System</h3>
                 <p>Designed a dual-zone automated regulation system for cucumbers and common beans. Integrated sensors for pH, EC, temperature, and humidity, housed in custom 3D-printed enclosures.</p>
                 <div class="tech-stack">
@@ -41,10 +43,12 @@
                     <span class="tech-tag">I2C & GPIO</span>
                     <span class="tech-tag">3D Design</span>
                 </div>
+                <a class="project-link" href="projects/smart-hydroponics.html">View Project</a>
             </div>
             
             <!-- Project 2 -->
             <div class="project-card">
+                <img src="images/project-carpc.svg" alt="Automotive CarPC Diagnostics" class="project-image">
                 <h3 class="project-title">Automotive CarPC Diagnostics</h3>
                 <p>Adapted Dell OptiPlex hardware for Android Auto dashboard integration. Evaluated and integrated OBD2 scanning tools for real-time vehicle diagnostics.</p>
                 <div class="tech-stack">
@@ -52,10 +56,12 @@
                     <span class="tech-tag">OBD2</span>
                     <span class="tech-tag">Android Auto</span>
                 </div>
+                <a class="project-link" href="projects/carpc-diagnostics.html">View Project</a>
             </div>
 
             <!-- Project 3 -->
             <div class="project-card">
+                <img src="images/project-cyberdeck.svg" alt="Cyberdeck & SBC Builds" class="project-image">
                 <h3 class="project-title">Cyberdeck & SBC Builds</h3>
                 <p>Explored low-power computing and custom active cooling solutions using single-board computers like Raspberry Pi and Orange Pi for portable tech builds.</p>
                 <div class="tech-stack">
@@ -63,10 +69,12 @@
                     <span class="tech-tag">Thermal Management</span>
                     <span class="tech-tag">Linux</span>
                 </div>
+                <a class="project-link" href="projects/cyberdeck-sbc.html">View Project</a>
             </div>
 
             <!-- Project 4 -->
             <div class="project-card">
+                <img src="images/project-branding.svg" alt="RLD Autoworx Digital Branding" class="project-image">
                 <h3 class="project-title">RLD Autoworx Digital Branding</h3>
                 <p>Developed digital branding, created logos, and generated promotional video scripts and subtitle files for an auto body repair and restoration service.</p>
                 <div class="tech-stack">
@@ -74,6 +82,7 @@
                     <span class="tech-tag">Video Editing</span>
                     <span class="tech-tag">Copywriting</span>
                 </div>
+                <a class="project-link" href="projects/rld-autoworx.html">View Project</a>
             </div>
         </div>
     </section>
@@ -112,12 +121,22 @@
         </div>
     </section>
 
-    <!-- Footer / About & Contact -->
-    <footer id="about">
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <p>
+                I am a Computer Engineer based in Pangil, Laguna, driven by the challenge of building practical, automated systems. From embedded devices to hardware prototypes, I enjoy turning ideas into working solutions that solve real problems.
+            </p>
+            <p>
+                My work combines hands-on hardware tinkering, system thinking, and a strong interest in practical automation. I’m especially motivated by projects that connect electronics, software, and everyday usability.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact">
         <h2>Let's Connect</h2>
-        <p class="about-text">
-            I am a Computer Engineer based in Pangil, Laguna, driven by the challenge of building practical, automated systems. Whether it's wiring up a microcontroller or restoring a vehicle, I love making things work perfectly.
-        </p>
         <div class="social-links">
             <a href="mailto:kagayutanjoshua@gmail.com">Email Me</a>
             <a href="#">LinkedIn</a>
@@ -125,6 +144,17 @@
         </div>
         <p class="copyright">&copy; 2026 Joshua Kagayutan. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.querySelectorAll('.project-card').forEach((card) => {
+            const button = card.querySelector('.toggle-btn');
+
+            button.addEventListener('click', () => {
+                const isExpanded = card.classList.toggle('expanded');
+                button.textContent = isExpanded ? 'Show Less' : 'Show More';
+            });
+        });
+    </script>
 
 </body>
 </html>
